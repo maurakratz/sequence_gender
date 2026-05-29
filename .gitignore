@@ -1,0 +1,29 @@
+# R specific files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rproj.user
+
+# Data and results folder plus common data formats
+data/
+results/
+*.csv
+*.rds
+*.dta
+*.sav
+*.xlsx
+
+# Notes and drafts 
+drafts/
+material*/
+lit*/
+*.doc
+*.docx
+*.pdf
+
+# OS specific hidden files
+.DS_Store
+Thumbs.db
+.httr-oauth
+.quarto
