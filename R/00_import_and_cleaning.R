@@ -1,6 +1,6 @@
 
 # 01 packages -------------------
-pacman::p_load(haven, dailyr, summarytools, dplyr, installr, labelled)
+pacman::p_load(gert, haven, dailyr, summarytools, dplyr, installr, labelled)
 
 # installr::check.for.updates.R()
 # installr::updateR()
