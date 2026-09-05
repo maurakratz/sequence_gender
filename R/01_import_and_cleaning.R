@@ -1,13 +1,5 @@
 
-# 01 packages -------------------
-pacman::p_load(gert, haven, dailyr, summarytools, dplyr, installr, labelled)
-
-# installr::check.for.updates.R()
-# installr::updateR()
-
-
-
-# 02 import -----------------------
+# 01 import -----------------------
 
 # Read in the nomination data
 nom_2025_raw <- haven::read_dta(r"(.\data\ZA10104_GLES_25_Nominierung_v1-0-0\ZA10104_v1-0-0.dta)")
@@ -198,14 +190,6 @@ candi_2025 %>%
   # View(nom_2025_clean_overview)
 
 # Schritt 2 Missing Value Labels weg
-remove_negative_val_labels <- function(x) {
-   if (haven::is.labelled(x)) {
-      labs <- attr(x, "labels")
-      attr(x, "labels") <- labs[labs >= 0]
-   }
-   x
-}
-
 nom_2025_clean <- nom_2025_clean %>%
    mutate(across(everything(), remove_negative_val_labels))
 

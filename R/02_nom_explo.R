@@ -2,38 +2,10 @@
 # RUN IMPORT AND CLEANING SCRIPT FIRST!
 
 # setup ------------
-pacman::p_load(dplyr, tidyr, haven, lubridate, ggplot2, janitor)
 
 load(r"(.\data\btw2025_clean.RData)")
-# enthält beide cleaned datasets nominierungsstudie und kandidierendenstudie, die ich in 00_import_and_cleaning erstellt habe
-
-
-party_colors <- c(
-   "CDU/CSU" = "#000000",
-   "CDU" = "#000000",
-   "SPD" = "#E3000F",
-   "Bündnis 90/Die Grünen" = "#00A651",
-   "Grünen" = "#00A651",
-   "Grüne" = "#00A651",
-   "FDP" = "#FFED00",
-   "Die Linke" = "#BE3075",
-   "DieLinke" = "#BE3075",
-   "Linke" = "#BE3075",
-   "AfD" = "#009EE0",
-   "BSW" = "#6B1F7C",
-   "Sonstige" = "#999999"
-)
-
-party_colors <- c(
-   "CDU" = "#000000",
-   "CSU" = "#000000",
-   "SPD" = "#E3000F",
-   "GRUENE" = "#00A651",
-   "FDP" = "#FFED00",
-   "DIE LINKE" = "#BE3075",
-   "AfD" = "#009EE0",
-   "BSW" = "#6B1F7C"
-)
+# enthält beide cleaned datasets nominierungsstudie und kandidierendenstudie,
+# die ich in 00_import_and_cleaning erstellt habe
 
 
 # 01 Innerparteilicher Wettbewerb in Wahlkreisen ----------------
