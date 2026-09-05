@@ -12,6 +12,7 @@ pacman::p_load(haven, dailyr, summarytools, dplyr, installr, labelled)
 # Read in the nomination data
 nom_2025_raw <- haven::read_dta(r"(.\data\ZA10104_GLES_25_Nominierung_v1-0-0\ZA10104_v1-0-0.dta)")
 
+
 # read in candidate data
 candi_2025_raw <- haven::read_dta(r"(.\data\ZA10102_GLES25_Kandidierende_v1-0-0/ZA10102_v1-0-0.dta)")
 # Grundgesamtheit laut CB: "Die Grundgesamtheit bestand aus den Kandidierenden

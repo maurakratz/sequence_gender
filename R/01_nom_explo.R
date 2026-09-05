@@ -137,7 +137,7 @@ nom_2025_clean %>%
 nom_2025_clean %>%
    dplyr::count(partei)
 
-# überischt missings
+# übersicht missings
 nom_2025_clean %>%
    filter(n01 == 1) %>%
    mutate(partei = as_factor(partei)) %>%
